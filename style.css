@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fcfcfc;
+    color: #333;
+}
+
+body,
+input,
+button{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    background: #ffffff;
+    max-width: 450px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px;
+}
+
+.header header {
+    margin: 4px 0;
+    text-align: center;
+}
+
+.header header h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.form {
+    margin: 4px 0;
+}
+
+.form form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form label {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 12px;
+    margin: 4px 0;
+}
+
+.form input {
+    height: 38px;
+    margin: 4px 0;
+    padding: 2px 6px 2px 8px;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    transition: .2s;
+}
+
+.form input:focus {
+    outline-color: #a34dff;
+}
+
+.form button {
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background: #a34dff;
+    color: #f2f2f2;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    transition: filter .3s;
+}
+
+.form button:hover {
+    filter: brightness(.9);
+}
+
+.separator {
+    height: 1px;
+    border-radius: 1px;
+    background: #f2f2f2;
+    margin: 10px 0;
+}
+
+.list-tasks ul {
+    list-style: none;
+}
+
+.list-tasks ul li {
+    background: #fcfcfc;
+    min-height: 32px;
+    border-radius: 4px;
+    color: #333;
+    word-break: break-word;
+    font-size: 14px;
+    padding: 4px 8px;
+    -webkit-box-shadow: 2px 2px 4px -1px rgb(0 0 0 / 35%);
+    -moz-box-shadow: 2px 2px 4px -1px rgb(0 0 0 / 35%);
+    box-shadow: 2px 2px 4px -1px rgb(0 0 0 / 35%);
+    cursor: default;
+    transition: .2s;
+}
+
+.list-tasks ul li + li {
+    margin-top: 5px;
+}
+
+.list-tasks ul li:hover {
+    transform: translateY(-2px);
+    filter: brightness(.96);
+}
+
+.list-tasks form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12px;
+}
+
+.list-tasks .btn-clear {
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background: #e8e8e8;
+    color: #333333;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+
+    transition: filter .2s;
+}
+
+.list-tasks .btn-clear:hover {
+    filter: brightness(.96);
+}
+
+.footer footer{
+    padding: 12px;
+}
+
+.footer p {
+    font-size: 12px;
+    color: #333333;
+    text-align: center;
+}
+
+.alert_message {
+    color: red;
+    font-size: 12px;
+}
